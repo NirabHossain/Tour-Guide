@@ -12,39 +12,36 @@ const Banner = () => {
             <Carousel.Item>
                 <img
                     className="d-block w-100"
-                    src={tourPlaces[0]?.picture}
+                    src={tourPlaces[7]?.picture}
                     alt="First slide"
-                    height={400}
                 />
                 <Carousel.Caption>
-                    <h3>{tourPlaces[0]?.name}</h3>
-                    <p>{tourPlaces[0]?.address}</p>
+                    <h3>{tourPlaces[7]?.name}</h3>
+                    <p>{tourPlaces[7]?.address}</p>
                 </Carousel.Caption>
             </Carousel.Item>
             <Carousel.Item>
                 <img
                     className="d-block w-100"
-                    src={tourPlaces[1]?.picture}
+                    src={tourPlaces[9]?.picture}
                     alt="Second slide"
-                    height={400}
                 />
 
                 <Carousel.Caption>
-                <h3>{tourPlaces[1]?.name}</h3>
-                    <p>{tourPlaces[1]?.address}</p>
+                <h3>{tourPlaces[9]?.name}</h3>
+                    <p>{tourPlaces[9]?.address}</p>
                 </Carousel.Caption>
             </Carousel.Item>
             <Carousel.Item>
                 <img
                     className="d-block w-100"
-                    src={tourPlaces[2]?.picture}
+                    src={tourPlaces[8]?.picture}
                     alt="Second slide"
-                    height={400}
                 />
 
                 <Carousel.Caption>
-                <h3>{tourPlaces[2]?.name}</h3>
-                    <p>{tourPlaces[2]?.address}</p>
+                <h3>{tourPlaces[8]?.name}</h3>
+                    <p>{tourPlaces[8]?.address}</p>
                 </Carousel.Caption>
             </Carousel.Item>
         </Carousel>
