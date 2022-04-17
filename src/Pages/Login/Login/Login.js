@@ -25,17 +25,11 @@ const Login = () => {
 
     const [sendPasswordResetEmail, sending] = useSendPasswordResetEmail(auth);
 
-    if (loading || sending) {
-        return <Loading></Loading>
-    }
+    if (loading || sending) return <Loading></Loading>
+    
+    if (user)navigate(from, { replace: true });    
 
-    if (user) {
-        navigate(from, { replace: true });
-    }
-
-    if (error) {
-        errorElement = <p className='text-danger'>Error: {error?.message}</p>
-    }
+    if (error) errorElement = <p className='text-danger'>Error: {error?.message}</p>
 
     const handleSubmit = event => {
         event.preventDefault();
@@ -53,10 +47,10 @@ const Login = () => {
         const email = emailRef.current.value;
         if (email) {
             await sendPasswordResetEmail(email);
-            toast('Sent email');
+            toast('Please check your email, check spam folder also');
         }
         else{
-            toast('please enter your email address');
+            toast('Please enter Email address in the form to reset your password');
         }
     }
 
