@@ -16,7 +16,7 @@ const Header = () => {
 
     return (
         <>
-            <Navbar collapseOnSelect expand="lg" sticky='top' bg="info" variant="dark">
+            <Navbar collapseOnSelect expand="lg" sticky='top' bg="secondary" variant="dark">
                 <Container>
                     <Navbar.Brand as={Link} to="/">
                         <img width={140} height={35} src={logo} alt="" />
@@ -24,13 +24,13 @@ const Header = () => {
                     <Navbar.Toggle aria-controls="responsive-navbar-nav" />
                     <Navbar.Collapse id="responsive-navbar-nav">
                         <Nav className="me-auto navs">
-                            <Nav.Link href="home#places">Tour Spots</Nav.Link>
-                            <Nav.Link href="home#vehicles">Vehicles</Nav.Link>
-                            <Nav.Link as={Link} to="checkout">Checkout</Nav.Link>
-                            <Nav.Link as={Link} to="blogs">Blogs</Nav.Link>
+                            <Nav.Link href="home#places" className='text-white'>Tour Spots</Nav.Link>
+                            <Nav.Link href="home#vehicles" className='text-white'>Vehicles</Nav.Link>
+                            <Nav.Link as={Link} to="checkout" className='text-white'>Checkout</Nav.Link>
+                            <Nav.Link as={Link} to="blogs" className='text-white'>Blogs</Nav.Link>
                         </Nav>
                         <Nav>
-                            <Nav.Link as={Link} to="about">About</Nav.Link>
+                            <Nav.Link as={Link} to="about" className='text-white'>About</Nav.Link>
                             {
                                 user ?
                                     <div className='d-flex align-items-baseline justify-content-center'>
