@@ -15,7 +15,6 @@ const PlacesCheckout = () => {
 
     return (
         <div>
-            <h2> {placeId}</h2>
             <div className='text-center mb-5 pb-5'>
                 <div className='place'>
                     <img src={picture} alt="" className='pb-3' />

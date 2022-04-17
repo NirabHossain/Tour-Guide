@@ -1,10 +1,10 @@
 import React from 'react';
 
-import bus from '../../../images/experts/bus.png';
-import train from '../../../images/experts/train.png';
-import car from '../../../images/experts/car.png';
-import plane from '../../../images/experts/plane.png';
-import bike from '../../../images/experts/bike.png';
+import bus from '../../../images/vehicles/bus.png';
+import train from '../../../images/vehicles/train.png';
+import car from '../../../images/vehicles/car.png';
+import plane from '../../../images/vehicles/plane.png';
+import bike from '../../../images/vehicles/bike.png';
 import Vehicle from '../Vehicle/Vehicle';
 
 const vehicles = [

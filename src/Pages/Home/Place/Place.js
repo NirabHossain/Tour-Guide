@@ -6,8 +6,8 @@ const Place = ({service}) => {
     const {index, name, picture, about, cost, address, isAvailable} = service;
     const navigate = useNavigate();
 
-    const navigateToServiceDetail = id =>{
-        navigate(`/place/${id}`);
+    const navigateToServiceDetail = index =>{
+        navigate(`/place/${index}`);
     }
     return (
         <div className='place'>
