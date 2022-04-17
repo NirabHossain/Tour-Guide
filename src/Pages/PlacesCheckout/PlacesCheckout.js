@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { Link, useParams } from 'react-router-dom';
 import tourPlaces from '../../TourPlaces/TourPlaces';
 
@@ -32,7 +32,7 @@ const PlacesCheckout = () => {
                             <button className='btn btn-primary'>Make Payment</button>
                         </Link> 
                         :
-                        <h3>The tour place is currently booked, please try again after some days</h3>
+                        <h3 className='text-danger'>The tour place is currently booked, please try again after some days</h3>
                 }
 
             </div>

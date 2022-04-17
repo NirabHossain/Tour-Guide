@@ -1,4 +1,3 @@
-import React, { useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import { useCreateUserWithEmailAndPassword, useUpdateProfile } from 'react-firebase-hooks/auth';
 import './Register.css';
@@ -7,14 +6,12 @@ import SocialLogin from '../SocialLogin/SocialLogin';
 import Loading from '../../Shared/Loading/Loading';
 
 const Register = () => {
-    const [agree, setAgree] = useState(false);
     const [
         createUserWithEmailAndPassword,
         user,
-        loading,
-        error,
+        loading
     ] = useCreateUserWithEmailAndPassword(auth, {sendEmailVerification: true});
-    const [updateProfile, updating, updateError] = useUpdateProfile(auth);
+    const [updateProfile, updating] = useUpdateProfile(auth);
 
     const navigate = useNavigate();
 
@@ -35,14 +32,13 @@ const Register = () => {
         const name = event.target.name.value;
         const email = event.target.email.value;
         const password = event.target.password.value;
-        // const agree = event.target.terms.checked;
 
         await createUserWithEmailAndPassword(email, password);
         await updateProfile({ displayName: name });
-        console.log('Updated profile');
         navigate('/home');
     }
 
+    // Email password and social log in with google only
     return (
         <div className='register-form'>
             <h2 style={{ textAlign: 'center' }}>Please Register</h2>

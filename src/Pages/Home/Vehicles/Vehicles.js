@@ -5,7 +5,7 @@ import train from '../../../images/experts/train.png';
 import car from '../../../images/experts/car.png';
 import plane from '../../../images/experts/plane.png';
 import bike from '../../../images/experts/bike.png';
-import Expert from '../Expert/Expert';
+import Vehicle from '../Vehicle/Vehicle';
 
 const vehicles = [
     {id: 1, name: 'Bus', img: bus, fare: 1500, description: "Go with cheap cost"},
@@ -20,7 +20,7 @@ const Vehicles = () => {
         <div id="vehicles" className='container mb-5 pb-5 experts'>
             <h2 className='text-primary text-center mt-5'>Offered Vehicle Types</h2>
             <div className="row">
-                {vehicles.map(vehicle => <Expert key={vehicle.id} vehicle= {vehicle}></Expert>)}
+                {vehicles.map(vehicle => <Vehicle key={vehicle.id} vehicle= {vehicle}></Vehicle>)}
             </div>
         </div>
     );

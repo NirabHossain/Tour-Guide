@@ -25,6 +25,7 @@ const Login = () => {
 
     const [sendPasswordResetEmail, sending] = useSendPasswordResetEmail(auth);
 
+    // User error and loading from the firebase-react-hook
     if (loading || sending) return <Loading></Loading>
     
     if (user)navigate(from, { replace: true });    

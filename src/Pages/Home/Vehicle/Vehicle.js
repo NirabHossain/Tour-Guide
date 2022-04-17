@@ -1,6 +1,6 @@
 import React from 'react';
 
-const Expert = ({ vehicle }) => {
+const Vehicle = ({ vehicle }) => {
     const { name, img, fare, description} = vehicle;
     return (
         <div className='g-5 col-sm-12 col-md-6 col-lg-4'>
@@ -9,7 +9,7 @@ const Expert = ({ vehicle }) => {
                 <div className="card-body">
                     <h5 className="card-title">{name}</h5>
                     <p className="card-text">{description}</p>
-                    <a href="#services" className="btn btn-primary">Confirm {name}</a>
+                    <a href="#places" className="btn btn-primary">Confirm {name}</a>
                 </div>
                 <div className='card-footer'>{name} fare: {fare} BDT</div>
             </div>
@@ -18,4 +18,4 @@ const Expert = ({ vehicle }) => {
     );
 };
 
-export default Expert;
+export default Vehicle;

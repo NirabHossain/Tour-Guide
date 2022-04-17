@@ -1,6 +1,6 @@
 import React from 'react';
 import Banner from '../Banner/Banner';
-import Vehicles from '../Experts/Experts';
+import Vehicles from '../Vehicles/Vehicles';
 import Places from '../Places/Places';
 
 const Home = () => {
