@@ -1,0 +1,8 @@
+#nirab{
+    margin: 20px 10px;
+}
+
+.App a:hover{
+    background-color: aquamarine;
+    color: blanchedalmond;
+}

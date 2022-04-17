@@ -1,0 +1,153 @@
+[
+  {
+    "_id": "625b310b83c425fb5769f66e",
+    "index": 7,
+    "isAvailable": true,
+    "cost": "6,833.53",
+    "picture": "https://i.ibb.co/vHfqQGG/nijhum-island.jpg",
+    "name": "Nijhum Island",
+    "address": "Nijhum Island, Noakhali",
+    "about": "This place is too nice, you can not help loving the place you just see in the photo. If you want to go there, then pack your baggages and contact me as soon as possible. Only a few seats available."
+  },
+  {
+    "_id": "625b310b9b31146aef1afea1",
+    "index": 8,
+    "isAvailable": true,
+    "cost": "9,908.97",
+    "picture": "https://i.ibb.co/C1CWpjq/kuakata.jpg",
+    "name": "Kuakata",
+    "address": "Kuakata, Barishal",
+    "about": "This place is too nice, you can not help loving the place you just see in the photo. If you want to go there, then pack your baggages and contact me as soon as possible. Only a few seats available."
+  },
+  {
+    "_id": "625b310b51349d26cf4434f0",
+    "index": 9,
+    "isAvailable": true,
+    "cost": "5,083.66",
+    "picture": "https://i.ibb.co/FwTsn4n/bichanakandi.jpg",
+    "name": "Bichanakandi",
+    "address": "Bichanakandi, Sylhet",
+    "about": "This place is too nice, you can not help loving the place you just see in the photo. If you want to go there, then pack your baggages and contact me as soon as possible. Only a few seats available."
+  },
+  {
+    "_id": "625b310b84e8d92158742110",
+    "index": 10,
+    "isAvailable": false,
+    "cost": "6,951.20",
+    "picture": "https://i.ibb.co/YBdChDg/jaflong.jpg",
+    "name": "Jaflong",
+    "address": "Jaflong, Sylhet",
+    "about": "This place is too nice, you can not help loving the place you just see in the photo. If you want to go there, then pack your baggages and contact me as soon as possible. Only a few seats available."
+  },
+  {
+    "_id": "625b310b15bb6b0169c27bfb",
+    "index": 11,
+    "isAvailable": true,
+    "cost": "7,768.26",
+    "picture": "https://i.ibb.co/SQnSjfQ/inani.jpg",
+    "name": "Inani Beach",
+    "address": "Inani Beach, Cox's bazar",
+    "about": "This place is too nice, you can not help loving the place you just see in the photo. If you want to go there, then pack your baggages and contact me as soon as possible. Only a few seats available."
+  },
+  {
+    "_id": "625b310b5a5f371595d8ad71",
+    "index": 12,
+    "isAvailable": false,
+    "cost": "7,672.69",
+    "picture": "https://i.ibb.co/RPX401T/chittagong-hill.jpg",
+    "name": "Chittagong Hill Tracts",
+    "address": "Chattogram",
+    "about": "This place is too nice, you can not help loving the place you just see in the photo. If you want to go there, then pack your baggages and contact me as soon as possible. Only a few seats available."
+  },
+  {
+    "_id": "625b310b1e3dc2aef061a57b",
+    "index": 13,
+    "isAvailable": false,
+    "cost": "7,383.20",
+    "picture": "https://i.ibb.co/rfZTtsD/chandranath.jpg",
+    "name": "Chandranath Pahar",
+    "address": "Chandranath, Sitakundo, Chattogram",
+    "about": "This place is too nice, you can not help loving the place you just see in the photo. If you want to go there, then pack your baggages and contact me as soon as possible. Only a few seats available."
+  },
+  {
+    "_id": "625b310bd69a14d8e5fc4c3d",
+    "index": 0,
+    "isAvailable": false,
+    "cost": "8,956.04",
+    "picture": "https://i.ibb.co/6X1BJFZ/sundarban.jpg",
+    "name": "Sundarban",
+    "address": "Sundarban, Bagerhat",
+    "about": "This place is too nice, you can not help loving the place you just see in the photo. If you want to go there, then pack your baggages and contact me as soon as possible. Only a few seats available."
+  },
+  {
+    "_id": "625b310bf1f2a1556579fd0f",
+    "index": 1,
+    "isAvailable": true,
+    "cost": "7,073.05",
+    "picture": "https://i.ibb.co/ZxMBjpR/srimangal.jpg",
+    "name": "Srimangal",
+    "address": "Srimangal, Sylhet",
+    "about": "This place is too nice, you can not help loving the place you just see in the photo. If you want to go there, then pack your baggages and contact me as soon as possible. Only a few seats available."
+  },
+  {
+    "_id": "625b310b6eadfb5ad555791a",
+    "index": 2,
+    "isAvailable": false,
+    "cost": "9,970.22",
+    "picture": "https://i.ibb.co/M5SjH2P/sajek.jpg",
+    "name": "Sajek Valley",
+    "address": "Sajek Valley, Khagrachhori",
+    "about": "This place is too nice, you can not help loving the place you just see in the photo. If you want to go there, then pack your baggages and contact me as soon as possible. Only a few seats available."
+  },
+  {
+    "_id": "625b310b8d641da5de51e677",
+    "index": 3,
+    "isAvailable": true,
+    "cost": "7,744.96",
+    "picture": "https://i.ibb.co/B4s9gqR/saint-martin.jpg",
+    "name": "Saint Martin",
+    "address": "Saint Martin, Cox's Bazar",
+    "about": "This place is too nice, you can not help loving the place you just see in the photo. If you want to go there, then pack your baggages and contact me as soon as possible. Only a few seats available."
+  },
+  {
+    "_id": "625b310b4644040b5cdc27cd",
+    "index": 4,
+    "isAvailable": false,
+    "cost": "6,381.38",
+    "picture": "https://i.ibb.co/HrrK9hJ/ratargul.jpg",
+    "name": "Ratargul",
+    "address": "Ratargul, Sylhet",
+    "about": "This place is too nice, you can not help loving the place you just see in the photo. If you want to go there, then pack your baggages and contact me as soon as possible. Only a few seats available."
+  },
+  {
+    "_id": "625b310b5dbe3ee2ea9ba5cc",
+    "index": 5,
+    "isAvailable": false,
+    "cost": "5,450.95",
+    "picture": "https://i.ibb.co/2K45HHq/rangamati.jpg",
+    "name": "Rangamati",
+    "address": "Rangamati",
+    "about": "This place is too nice, you can not help loving the place you just see in the photo. If you want to go there, then pack your baggages and contact me as soon as possible. Only a few seats available."
+  },
+  {
+    "_id": "625b310b70b39ed1cacca1d1",
+    "index": 6,
+    "isAvailable": true,
+    "cost": "8,534.83",
+    "picture": "https://i.ibb.co/KmsgSsX/lalakhal.jpg",
+    "name": "Lala khal",
+    "address": "Lala khal, Sylhet",
+    "about": "This place is too nice, you can not help loving the place you just see in the photo. If you want to go there, then pack your baggages and contact me as soon as possible. Only a few seats available."
+  },
+  {
+    "_id": "625b310b4f6a7a5020b20dc5",
+    "index": 14,
+    "isAvailable": false,
+    "cost": "5,842.10",
+    "picture": "https://i.ibb.co/tXdDK09/paharpur.jpg",
+    "name": "Paharpur",
+    "address": "Paharpur, Naogaon",
+    "about": "This place is too nice, you can not help loving the place you just see in the photo. If you want to go there, then pack your baggages and contact me as soon as possible. Only a few seats available."
+  }
+]
+
