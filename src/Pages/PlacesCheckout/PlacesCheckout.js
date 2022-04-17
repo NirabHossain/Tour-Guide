@@ -33,7 +33,6 @@ const PlacesCheckout = () => {
                         :
                         <h3 className='text-danger'>The tour place is currently booked, please try again after some days</h3>
                 }
-
             </div>
         </div>
     );
