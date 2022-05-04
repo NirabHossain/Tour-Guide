@@ -16,13 +16,8 @@ const Login = () => {
 
     let from = location.state?.from?.pathname || "/";
     let errorElement;
-    const [
-        signInWithEmailAndPassword,
-        user,
-        loading,
-        error,
-    ] = useSignInWithEmailAndPassword(auth);
-
+    
+    const [signInWithEmailAndPassword,user,loading,error,] = useSignInWithEmailAndPassword(auth);
     const [sendPasswordResetEmail, sending] = useSendPasswordResetEmail(auth);
 
     // User error and loading from the firebase-react-hook
@@ -36,7 +31,6 @@ const Login = () => {
         event.preventDefault();
         const email = emailRef.current.value;
         const password = passwordRef.current.value;
-
         signInWithEmailAndPassword(email, password);
     }
 
@@ -72,7 +66,7 @@ const Login = () => {
             {errorElement}
             <p className='App'><Link to="/register" className='text-primary pe-auto text-decoration-none' onClick={navigateRegister}>Sign Up for New User</Link> </p>
             <p className='App'><button className='btn btn-link text-primary pe-auto text-decoration-none' onClick={resetPassword}>Forgot Password</button> </p>
-            <SocialLogin></SocialLogin>
+            <SocialLogin from={from}></SocialLogin>
             <ToastContainer />
         </div>
     );

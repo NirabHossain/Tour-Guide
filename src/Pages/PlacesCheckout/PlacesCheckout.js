@@ -1,16 +1,19 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import { Link, useParams } from 'react-router-dom';
-import tourPlaces from '../../TourPlaces/TourPlaces';
+// import tourPlaces from '../../TourPlaces/TourPlaces';
 
 const PlacesCheckout = () => {
+    const [place, setPlace] = useState({});
     const { placeId } = useParams();
-    let determinedPlace;
+    // let determinedPlace="";
 
-    tourPlaces.forEach(place => {
-        if ((+place.index)===(+placeId)) determinedPlace = place;
-    });
+    useEffect(() => {
+        fetch(`http://localhost:5000/places/${placeId}`)
+            .then(res => res.json())
+            .then(data => setPlace(data));
+    }, [placeId])
 
-    const { name, cost, about, picture, isAvailable, address } = determinedPlace;
+    const { name, cost, about, picture, isAvailable, address } = place;
 
 
     return (
@@ -29,7 +32,7 @@ const PlacesCheckout = () => {
                     isAvailable ?
                         <Link to="/checkout">
                             <button className='btn btn-primary'>Make Payment</button>
-                        </Link> 
+                        </Link>
                         :
                         <h3 className='text-danger'>The tour place is currently booked, please try again after some days</h3>
                 }

@@ -3,11 +3,11 @@ import { useNavigate } from 'react-router-dom';
 import './Place.css';
 
 const Place = ({service}) => {
-    const {index, name, picture, about, cost, address, isAvailable} = service;
+    const {_id, name, picture, about, cost, address, isAvailable} = service;
     const navigate = useNavigate();
 
-    const navigateToServiceDetail = index =>{
-        navigate(`/place/${index}`);
+    const navigateToServiceDetail = id =>{
+        navigate(`/places/${id}`);
     }
     return (
         <div className='place'>
@@ -19,7 +19,7 @@ const Place = ({service}) => {
 
             <p className='text-secondary'>Address: {address}</p>
             <p><small>{about}</small></p>
-            <button onClick={() => navigateToServiceDetail(index)} className='btn btn-primary'>Book: {name}</button>
+            <button onClick={() => navigateToServiceDetail(_id)} className='btn btn-primary'>Book: {name}</button>
         </div>
     );
 };

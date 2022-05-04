@@ -13,6 +13,8 @@ import NotFound from './Pages/Shared/NotFound/NotFound';
 
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Blogs from './Blogs/Blogs';
+import AddPlaces from './Pages/AddPlaces/AddPlaces';
+import ManagePlaces from './Pages/ManagePlaces/ManagePlaces';
 
 function App() {
   return (
@@ -22,7 +24,7 @@ function App() {
         <Route path="/" element={<Home></Home>}></Route>
         <Route path="/home" element={<Home></Home>}></Route>
         <Route path="/blogs" element={<Blogs></Blogs>}></Route>
-        <Route path='/place/:placeId' element={
+        <Route path='/places/:placeId' element={
           <RequireAuth>
             <PlacesCheckout/>
           </RequireAuth>
@@ -33,6 +35,16 @@ function App() {
         <Route path="/checkout" element={
           <RequireAuth>
             <Checkout></Checkout>
+          </RequireAuth>
+        }></Route>
+        <Route path="/add" element={
+          <RequireAuth>
+            <AddPlaces/>
+          </RequireAuth>
+        }></Route>
+        <Route path="/manage" element={
+          <RequireAuth>
+            <ManagePlaces/>
           </RequireAuth>
         }></Route>
         <Route path="*" element={<NotFound></NotFound>}></Route>

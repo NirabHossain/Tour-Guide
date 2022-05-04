@@ -6,7 +6,7 @@ import Places from '../Places/Places';
 const Home = () => {
     return (
         <>
-            <Banner></Banner>
+            {/* <Banner></Banner> */}
             <Places></Places>
             <Vehicles></Vehicles>
         </>

@@ -24,9 +24,9 @@ const Header = () => {
                     <Navbar.Toggle aria-controls="responsive-navbar-nav" />
                     <Navbar.Collapse id="responsive-navbar-nav">
                         <Nav className="me-auto navs">
-                            <Nav.Link href="home#places" className='text-white'>Tour Spots</Nav.Link>
+                            <Nav.Link href="home#places" className='text-white'>Tourist Spots</Nav.Link>
                             <Nav.Link href="home#vehicles" className='text-white'>Vehicles</Nav.Link>
-                            <Nav.Link as={Link} to="checkout" className='text-white'>Checkout</Nav.Link>
+                            {/* <Nav.Link as={Link} to="checkout" className='text-white'>Checkout</Nav.Link> */}
                             <Nav.Link as={Link} to="blogs" className='text-white'>Blogs</Nav.Link>
                         </Nav>
                         <Nav>
@@ -34,8 +34,11 @@ const Header = () => {
                             {
                                 user ?
                                     <div className='d-flex align-items-baseline justify-content-center'>
+                                        <Nav.Link as={Link} to="add" className='text-white'>Choose Places</Nav.Link>
+                                        <Nav.Link as={Link} to="manage" className='text-white'>Manage Places</Nav.Link>
                                         <span className='rounded bg-light py-1 px-2'>{user?.displayName}</span>
                                         <button className='btn btn-link bg-white mx-2 text-decoration-none text-danger' onClick={handleSignOut}>sign out</button>
+
                                     </div>
                                     :
                                     <Nav.Link as={Link} to="login">
